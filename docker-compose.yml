@@ -1,0 +1,61 @@
+version: "3.7"
+services:
+    # APP SERVICES
+    app:
+        build:
+            context: .
+            dockerfile: ./docker/Dockerfile
+        image: app
+        container_name: indosoft
+        restart: unless-stopped
+        tty: true
+        environment:
+            SERVICE_NAME: indosoft
+            SERVICE_TAGS: prod
+        working_dir: /var/www/html
+        volumes:
+            - ./:/var/www/html
+            #- /var/www/html/vendor
+        extra_hosts:
+            - "internal.host:host-gateway"
+        networks:
+            - backend
+
+    # NGINX SERVICES
+    nginx:
+        image: nginx:alpine
+        container_name: indosoft_http
+        restart: on-failure
+        tty: true
+        ports:
+            - "80:80"
+            # - "80:80"
+            # - "443:443"
+        volumes:
+            - ./:/var/www/html
+            - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+            - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+        depends_on:
+            - app
+        networks:
+            - backend
+
+    # MONGO DB
+    mongo:
+        image: mongo:4.2.3-bionic
+        container_name: indosoft_mongodb
+        environment:
+            MONGO_INITDB_DATABASE: test
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: rootpassword
+        ports:
+            - 27017:27017
+        volumes:
+            - ./mongodb:/data/db
+        networks:
+            - backend
+
+#DOCKER NETWORKS
+networks:
+    backend:
+        driver: bridge

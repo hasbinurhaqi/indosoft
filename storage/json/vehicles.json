@@ -1,0 +1,50 @@
+[
+  {
+    "id": "4958afe0-5fdc-11ed-900f-a12677dc6e1a",
+    "harga": "4000000000",
+    "mobil": [ { "mesin" : "2500 cc", "kapasitas_penumpang" : "8 Penumpang", "tipe" : "Automation", "sold" : true } ],
+    "motor": [ { "mesin" : "1500 cc", "suspensi" : "Standart", "transmisi" : "Automation", "sold" : true } ],
+    "tahun": "2020",
+    "warna": "Putih"
+  },
+  {
+    "id": "4ca5fb10-5fdc-11ed-9ff3-8b86ef820913",
+    "harga": "4000000000",
+    "mobil": [ { "mesin" : "2500 cc", "kapasitas_penumpang" : "8 Penumpang", "tipe" : "Automation", "sold" : true }, { "mesin" : "1800 cc", "kapasitas_penumpang" : "4 Penumpang", "tipe" : "Manual Transmition", "sold" : false } ],
+    "motor": [ { "mesin" : "1500 cc", "suspensi" : "Standart", "transmisi" : "Automation", "sold" : true }, { "mesin" : "2500 cc", "suspensi" : "Standart", "transmisi" : "Manual Transmition", "sold" : false } ],
+    "tahun": "2020",
+    "warna": "Silver"
+  },
+  {
+    "id": "f08875e0-600b-11ed-bc65-2daeef3c1e0b",
+    "harga": "200000000",
+    "mobil": [{ "mesin" : "2500 cc", "kapasitas_penumpang" : "8 Penumpang", "tipe" : "Automation", "sold" : false }, { "mesin" : "1800 cc", "kapasitas_penumpang" : "5 Penumpang", "tipe" : "Manual Transmition", "sold" : false } ],
+    "motor": [{ "mesin" : "125 cc", "suspensi" : "Standart", "transmisi" : "Automation", "sold" : false }, { "mesin" : "150 cc", "suspensi" : "Standart", "transmisi" : "Manual Transmition", "sold" : false } ],
+    "tahun": "2089",
+    "warna": "Putih"
+  },
+  {
+    "id": "8df90440-600c-11ed-8ebf-772d0b92a9e6",
+    "harga": "200000000",
+    "mobil": [{ "mesin" : "2500 cc", "kapasitas_penumpang" : "8 Penumpang", "tipe" : "Automation", "sold" : false }, { "mesin" : "1800 cc", "kapasitas_penumpang" : "5 Penumpang", "tipe" : "Manual Transmition", "sold" : false } ],
+    "motor": [{ "mesin" : "125 cc", "suspensi" : "Standart", "transmisi" : "Automation", "sold" : false }, { "mesin" : "150 cc", "suspensi" : "Standart", "transmisi" : "Manual Transmition", "sold" : false } ],
+    "tahun": "1999",
+    "warna": "Putih"
+  },
+  {
+    "id": "016698b0-600d-11ed-939e-b12037843808",
+    "harga": "200000000",
+    "mobil": [{ "mesin" : "2500 cc", "kapasitas_penumpang" : "8 Penumpang", "tipe" : "Automation", "sold" : false }, { "mesin" : "1800 cc", "kapasitas_penumpang" : "5 Penumpang", "tipe" : "Manual Transmition", "sold" : false } ],
+    "motor": [{ "mesin" : "125 cc", "suspensi" : "Standart", "transmisi" : "Automation", "sold" : false }, { "mesin" : "150 cc", "suspensi" : "Standart", "transmisi" : "Manual Transmition", "sold" : false } ],
+    "tahun": "1998",
+    "warna": "Putih"
+  },
+  {
+    "id": "5bd9d600-600d-11ed-80b4-3d91513c1b55",
+    "harga": "200000000",
+    "mobil": [{ "mesin" : "2500 cc", "kapasitas_penumpang" : "8 Penumpang", "tipe" : "Automation", "sold" : false }, { "mesin" : "1800 cc", "kapasitas_penumpang" : "5 Penumpang", "tipe" : "Manual Transmition", "sold" : false } ],
+    "motor": [{ "mesin" : "125 cc", "suspensi" : "Standart", "transmisi" : "Automation", "sold" : false }, { "mesin" : "150 cc", "suspensi" : "Standart", "transmisi" : "Manual Transmition", "sold" : false } ],
+    "tahun": "1948",
+    "warna": "Putih"
+  }
+]
