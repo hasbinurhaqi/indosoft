@@ -41,6 +41,59 @@ mutation {
 
 ```
 
+####### Create Vehicles Documents
+mutation vehicles {
+  CreateVehicle(
+    tahun: 1948,
+    warna: "Putih",
+    harga: 200000000.00,
+    motor:[
+      {
+        mesin: "125 cc",
+        suspensi: "Standart",
+        transmisi: "Automation",
+        sold: false
+      },
+       {
+        mesin: "150 cc",
+        suspensi: "Standart",
+        transmisi: "Manual Transmition",
+        sold: false
+      }
+    ],
+   mobil:[
+    {
+      mesin: "2500 cc",
+      kapasitas_penumpang: "8 Penumpang",
+      tipe: "Automation",
+      sold: false
+    },
+     {
+      mesin: "1800 cc",
+      kapasitas_penumpang: "5 Penumpang",
+      tipe: "Manual Transmition",
+      sold: false
+    }
+  ],
+  ) {
+    id,
+    warna
+    motor {
+      mesin,
+      suspensi,
+      transmisi,
+      sold
+    },
+    mobil {
+      mesin,
+      kapasitas_penumpang,
+      tipe,
+      sold
+    }
+  }
+}
+
+
 ####### Fetch All Vehicles
 query FetchAllVehicles {
   Vehicles {
